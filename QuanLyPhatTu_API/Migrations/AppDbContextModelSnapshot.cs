@@ -137,6 +137,9 @@ namespace QuanLyPhatTu_API.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool?>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("NgayCapNhat")
                         .HasColumnType("datetime2");
 
@@ -164,7 +167,7 @@ namespace QuanLyPhatTu_API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("DaKetThuc")
+                    b.Property<bool?>("DaKetThuc")
                         .HasColumnType("bit");
 
                     b.Property<int>("NguoiTruTri")
@@ -182,6 +185,9 @@ namespace QuanLyPhatTu_API.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("ThoiGianBatDau")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ThoiGianKetThuc")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -203,10 +209,10 @@ namespace QuanLyPhatTu_API.Migrations
                     b.Property<DateTime>("NgayGuiDon")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("NgayXuLy")
+                    b.Property<DateTime?>("NgayXuLy")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("NguoiXuLy")
+                    b.Property<int?>("NguoiXuLy")
                         .HasColumnType("int");
 
                     b.Property<int>("PhatTuId")

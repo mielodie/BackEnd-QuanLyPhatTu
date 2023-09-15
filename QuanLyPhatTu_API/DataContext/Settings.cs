@@ -4,7 +4,7 @@
     {
         public static string MyConnectString()
         {
-            return "server=QUANMOVIT\\SQLEXPRESS; database=quanlyphatut_api; integrated security=sspi; encrypt=true; trustservercertificate = true;";
+            return "server=MIELODIE\\SQLEXPRESS; database=quanlyphatut_api; integrated security=sspi; encrypt=true; trustservercertificate = true;";
         }
     }
 }

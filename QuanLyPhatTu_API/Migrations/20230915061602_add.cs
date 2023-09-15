@@ -21,7 +21,8 @@ namespace QuanLyPhatTu_API.Migrations
                     DiaChi = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NgayThanhLap = table.Column<DateTime>(type: "datetime2", nullable: false),
                     NguoiTruTri = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    NgayCapNhat = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    NgayCapNhat = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsActive = table.Column<bool>(type: "bit", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -34,12 +35,13 @@ namespace QuanLyPhatTu_API.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    DaKetThuc = table.Column<bool>(type: "bit", nullable: false),
+                    DaKetThuc = table.Column<bool>(type: "bit", nullable: true),
                     NoiDung = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NoiToChuc = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SoThanhVienThamGia = table.Column<int>(type: "int", nullable: false),
                     ThoiGianBatDau = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    NguoiTruTri = table.Column<int>(type: "int", nullable: false)
+                    NguoiTruTri = table.Column<int>(type: "int", nullable: false),
+                    ThoiGianKetThuc = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -128,13 +130,13 @@ namespace QuanLyPhatTu_API.Migrations
                         column: x => x.ChuaId,
                         principalTable: "Chua_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_PhatTu_tbl_QuyenHan_tbl_QuyenHanId",
                         column: x => x.QuyenHanId,
                         principalTable: "QuyenHan_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -165,19 +167,19 @@ namespace QuanLyPhatTu_API.Migrations
                         column: x => x.LoaiBaiVietId,
                         principalTable: "LoaiBaiViet_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_BaiViet_tbl_PhatTu_tbl_PhatTuId",
                         column: x => x.PhatTuId,
                         principalTable: "PhatTu_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_BaiViet_tbl_TrangThaiBaiViet_tbl_TrangThaiBaiVietId",
                         column: x => x.TrangThaiBaiVietId,
                         principalTable: "TrangThaiBaiViet_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -187,8 +189,8 @@ namespace QuanLyPhatTu_API.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NgayGuiDon = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    NgayXuLy = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    NguoiXuLy = table.Column<int>(type: "int", nullable: false),
+                    NgayXuLy = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    NguoiXuLy = table.Column<int>(type: "int", nullable: true),
                     TrangThaiDonId = table.Column<int>(type: "int", nullable: false),
                     DaoTrangId = table.Column<int>(type: "int", nullable: false),
                     PhatTuId = table.Column<int>(type: "int", nullable: false)
@@ -201,19 +203,19 @@ namespace QuanLyPhatTu_API.Migrations
                         column: x => x.DaoTrangId,
                         principalTable: "DaoTrang_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_DonDangKy_tbl_PhatTu_tbl_PhatTuId",
                         column: x => x.PhatTuId,
                         principalTable: "PhatTu_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_DonDangKy_tbl_TrangThaiDon_tbl_TrangThaiDonId",
                         column: x => x.TrangThaiDonId,
                         principalTable: "TrangThaiDon_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -235,13 +237,13 @@ namespace QuanLyPhatTu_API.Migrations
                         column: x => x.DaoTrangId,
                         principalTable: "DaoTrang_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_PhatTuDaoTrang_tbl_PhatTu_tbl_PhatTuId",
                         column: x => x.PhatTuId,
                         principalTable: "PhatTu_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -262,7 +264,7 @@ namespace QuanLyPhatTu_API.Migrations
                         column: x => x.PhatTuId,
                         principalTable: "PhatTu_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -284,7 +286,7 @@ namespace QuanLyPhatTu_API.Migrations
                         column: x => x.PhatTuId,
                         principalTable: "PhatTu_tbl",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
