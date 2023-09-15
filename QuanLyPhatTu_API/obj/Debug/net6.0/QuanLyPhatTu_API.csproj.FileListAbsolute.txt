@@ -1,0 +1,342 @@
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\appsettings.Development.json
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\appsettings.json
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.exe
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.deps.json
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.runtimeconfig.json
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.pdb
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Azure.Core.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Azure.Identity.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Humanizer.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.CodeDom.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Json.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.AssemblyReference.cache
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.AssemblyInfoInputs.cache
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.AssemblyInfo.cs
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.CoreCompileInputs.cache
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.QuanLyPhatTu_API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.build.QuanLyPhatTu_API.props
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.QuanLyPhatTu_API.props
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.QuanLyPhatTu_API.props
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.build.json
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.development.json
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\scopedcss\bundle\QuanLyPhatTu_API.styles.css
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.CopyComplete
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\refint\QuanLyPhatTu_API.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.pdb
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.genruntimeconfig.cache
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\obj\Debug\net6.0\ref\QuanLyPhatTu_API.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\AutoMapper.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\BCrypt.Net-Next.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\CloudinaryDotNet.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.Core.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.MailKit.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.Smtp.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\ImageProcessor.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\JWT.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\MailKit.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.Security.Authorization.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\MimeKit.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Owin.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Scrutor.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Formats.Asn1.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\Projects C#\QuanLyPhatTu_API\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\appsettings.json
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.exe
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.deps.json
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.runtimeconfig.json
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.pdb
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\CloudinaryDotNet.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.Core.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.MailKit.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.Smtp.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\ImageProcessor.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\JWT.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\MailKit.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.Security.Authorization.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Owin.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Scrutor.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.AssemblyReference.cache
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.QuanLyPhatTu_API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.build.QuanLyPhatTu_API.props
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.QuanLyPhatTu_API.props
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.QuanLyPhatTu_API.props
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\scopedcss\bundle\QuanLyPhatTu_API.styles.css
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\refint\QuanLyPhatTu_API.dll
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.pdb
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.genruntimeconfig.cache
+C:\Users\Administrator\Source\Repos\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\ref\QuanLyPhatTu_API.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\appsettings.Development.json
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\appsettings.json
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.exe
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.deps.json
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.runtimeconfig.json
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\QuanLyPhatTu_API.pdb
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\AutoMapper.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Azure.Core.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Azure.Identity.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\BCrypt.Net-Next.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\CloudinaryDotNet.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.Core.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.MailKit.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\FluentEmail.Smtp.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Humanizer.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\ImageProcessor.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\JWT.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\MailKit.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.Host.SystemWeb.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Owin.Security.Authorization.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\MimeKit.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Owin.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Scrutor.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.CodeDom.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Formats.Asn1.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Text.Json.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.AssemblyReference.cache
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.GeneratedMSBuildEditorConfig.editorconfig
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.AssemblyInfoInputs.cache
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.AssemblyInfo.cs
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.CoreCompileInputs.cache
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.MvcApplicationPartsAssemblyInfo.cs
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.MvcApplicationPartsAssemblyInfo.cache
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.QuanLyPhatTu_API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.build.QuanLyPhatTu_API.props
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.QuanLyPhatTu_API.props
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.QuanLyPhatTu_API.props
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.pack.json
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.build.json
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\staticwebassets.development.json
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\scopedcss\bundle\QuanLyPhatTu_API.styles.css
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.csproj.CopyComplete
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\refint\QuanLyPhatTu_API.dll
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.pdb
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\QuanLyPhatTu_API.genruntimeconfig.cache
+D:\BackEnd_QuanLyPhatTu\QuanLyPhatTu_API\obj\Debug\net6.0\ref\QuanLyPhatTu_API.dll
