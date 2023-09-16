@@ -27,9 +27,21 @@ builder.Services.AddSwaggerGen(x =>
     x.OperationFilter<SecurityRequirementsOperationFilter>();
 });
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IDaoTrangService, DaoTrangService>();
+builder.Services.AddScoped<IChuaService, ChuaService>();
+builder.Services.AddScoped<IDonDangKyService, DonDangKyService>();
+builder.Services.AddScoped<IPhatTuService, PhatTuService>();
+builder.Services.AddScoped<ILoaiBaiVietService, LoaiBaiVietService>();
+builder.Services.AddSingleton<ResponseObject<LoaiBaiVietDTO>>();
 builder.Services.AddSingleton<ResponseObject<PhatTuDTO>>();
 builder.Services.AddSingleton<ResponseObject<TokenDTO>>();
+builder.Services.AddSingleton<ResponseObject<PhatTuDTO>>();
+builder.Services.AddSingleton<ResponseObject<DonDangKyDTO>>();
+builder.Services.AddSingleton<ResponseObject<ChuaDTO>>();
 builder.Services.AddSingleton<PhatTuConverter>();
+builder.Services.AddSingleton<DaoTrangConverter>();
+builder.Services.AddSingleton<ChuaConverter>();
+builder.Services.AddSingleton<DonDangKyConverter>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 
 {

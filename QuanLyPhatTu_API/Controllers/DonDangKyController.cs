@@ -62,7 +62,8 @@ namespace QuanLyPhatTu_API.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DuyetDonDangKy(Request_DuyetDonDangKy request)
         {
-            return Ok(await _donDangKyService.DuyetDonDangKy(request));
+            int id = int.Parse(HttpContext.User.FindFirst("Id")?.Value);
+            return Ok(await _donDangKyService.DuyetDonDangKy(id,request));
         }
     }
 }

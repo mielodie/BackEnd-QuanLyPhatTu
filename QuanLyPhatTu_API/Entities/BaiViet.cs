@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace QuanLyPhatTu_API.Entities
 {
@@ -14,8 +15,10 @@ namespace QuanLyPhatTu_API.Entities
         public int SoLuotThich { get; set; } = 0;
         public int SoLuotBinhLuan { get; set; } = 0;
         public DateTime ThoiGianDang { get; set; }
-        public DateTime ThoiGianCapNhat { get; set; }
-        public DateTime ThoiGianXoa { get; set; }
+        [MaybeNull]
+        public DateTime? ThoiGianCapNhat { get; set; }
+        [MaybeNull]
+        public DateTime? ThoiGianXoa { get; set; }
         public bool DaXoa { get; set; } = false;
         public int TrangThaiBaiVietId { get; set; }
         public LoaiBaiViet LoaiBaiViet { get; set; }

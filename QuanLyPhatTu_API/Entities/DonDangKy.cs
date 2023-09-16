@@ -11,8 +11,8 @@ namespace QuanLyPhatTu_API.Entities
         public int TrangThaiDonId { get; set; } = 1;
         public int DaoTrangId { get; set; }
         public int PhatTuId { get; set; }
-        public PhatTu PhatTu { get; set; }
-        public DaoTrang DaoTrang { get; set; }
-        public TrangThaiDon TrangThaiDon { get; set; }
+        public PhatTu? PhatTu { get; set; }
+        public DaoTrang? DaoTrang { get; set; }
+        public TrangThaiDon? TrangThaiDon { get; set; }
     }       
 }

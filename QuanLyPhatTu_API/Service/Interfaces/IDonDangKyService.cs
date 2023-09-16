@@ -8,6 +8,6 @@ namespace QuanLyPhatTu_API.Service.Interfaces
     {
         Task<ResponseObject<DonDangKyDTO>> TaoDonDangKy(int phatTuId, Request_TaoDonDangKy request);
         Task<ResponseObject<DonDangKyDTO>> SuaDonDangKy(int donDangKyId, Request_SuaDonDangKy request);
-        Task<ResponseObject<DonDangKyDTO>> DuyetDonDangKy(Request_DuyetDonDangKy request);
+        Task<ResponseObject<DonDangKyDTO>> DuyetDonDangKy(int nguoiXuLyId, Request_DuyetDonDangKy request);
     }
 }

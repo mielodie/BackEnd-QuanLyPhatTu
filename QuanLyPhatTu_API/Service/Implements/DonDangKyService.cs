@@ -19,7 +19,7 @@ namespace QuanLyPhatTu_API.Service.Implements
             _donDangKyConverter = donDangKyConverter;
         }
 
-        public async Task<ResponseObject<DonDangKyDTO>> DuyetDonDangKy(Request_DuyetDonDangKy request)
+        public async Task<ResponseObject<DonDangKyDTO>> DuyetDonDangKy(int nguoiXuLyId, Request_DuyetDonDangKy request)
         {
             var donDangKy = await _context.donDangKies.FirstOrDefaultAsync(x => x.Id == request.DonDangKyId);
 
@@ -28,7 +28,7 @@ namespace QuanLyPhatTu_API.Service.Implements
                 return _responseObject.ResponseError(StatusCodes.Status404NotFound, "Không tìm thấy đơn đăng ký", null);
             }
 
-            var nguoiDuyet = await _context.phatTus.FirstOrDefaultAsync(x => x.Id == donDangKy.NguoiXuLy);
+            var nguoiDuyet = await _context.phatTus.FirstOrDefaultAsync(x => x.Id == nguoiXuLyId);
 
             if (nguoiDuyet == null)
             {
@@ -46,12 +46,27 @@ namespace QuanLyPhatTu_API.Service.Implements
                 var daoTrang = await _context.daoTrangs.FirstOrDefaultAsync(x => x.Id == donDangKy.DaoTrangId);
                 if (daoTrang != null)
                 {
-                    daoTrang.SoThanhVienThamGia = await _context.phatTuDaoTrangs.CountAsync(x => x.PhatTuId == donDangKy.PhatTuId);
+                    daoTrang.SoThanhVienThamGia += 1;
                     _context.daoTrangs.Update(daoTrang);
                 }
-                var phatTuDaoTrangs = await _context.phatTuDaoTrangs.Where(x => x.DaoTrangId == daoTrang.Id).ToListAsync();
-                phatTuDaoTrangs.ForEach(x => x.DaThamGia = donDangKy.TrangThaiDonId == 2);
-                _context.phatTuDaoTrangs.UpdateRange(phatTuDaoTrangs);
+                //var phatTuDaoTrangs = await _context.phatTuDaoTrangs.Where(x => x.DaoTrangId == daoTrang.Id).ToListAsync();
+                //phatTuDaoTrangs.ForEach(x =>
+                //{
+                //    x.LyDoKhongThamGia = "Không thích";
+                //    x.DaThamGia = donDangKy.TrangThaiDonId == 2;
+                //    x.DaoTrangId = daoTrang.Id;
+                //    x.PhatTuId = donDangKy.PhatTuId;
+
+                //});
+                //await _context.phatTuDaoTrangs.AddRangeAsync(phatTuDaoTrangs);
+                var phatTuDaoTrang = new PhatTuDaoTrang
+                {
+                    DaoTrangId = daoTrang.Id,
+                    DaThamGia = donDangKy.TrangThaiDonId == 2,
+                    LyDoKhongThamGia = donDangKy.TrangThaiDonId == 2 ? "Đã tham gia" : "Không tham gia",
+                    PhatTuId = donDangKy.PhatTuId
+                };
+                await _context.phatTuDaoTrangs.AddAsync(phatTuDaoTrang);
 
                 await _context.SaveChangesAsync();
 
@@ -89,10 +104,13 @@ namespace QuanLyPhatTu_API.Service.Implements
             else
             {
                 DonDangKy donDangKy = new DonDangKy();
-                donDangKy.NgayGuiDon = DateTime.Now;
                 donDangKy.DaoTrangId = request.DaoTrangId;
-                donDangKy.PhatTuId = phatTu.Id;
+                donDangKy.NgayGuiDon = DateTime.Now;
+                donDangKy.PhatTuId = phatTuId;
+                donDangKy.NgayXuLy = DateTime.Now;
+                donDangKy.NguoiXuLy = 0;
                 donDangKy.TrangThaiDonId = 1;
+
                 await _context.donDangKies.AddAsync(donDangKy);
                 await _context.SaveChangesAsync();
                 return _responseObject.ResponseSuccess("Gửi đơn đăng ký thành công, vui lòng chờ duyệt", _donDangKyConverter.EntityToDTO(donDangKy));
