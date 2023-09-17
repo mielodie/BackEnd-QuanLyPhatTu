@@ -18,7 +18,6 @@ namespace QuanLyPhatTu_API.Payloads.Converters
                 NgayCapNhat = DateTime.Now,
                 NgaySinh = phatTu.NgaySinh,
                 NgayXuatGia = phatTu.NgayXuatGia,
-
                 PhapDanh = phatTu.PhapDanh,
                 SoDienThoai = phatTu.SoDienThoai
             };

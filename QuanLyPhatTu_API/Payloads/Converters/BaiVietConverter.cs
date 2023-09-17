@@ -29,5 +29,16 @@ namespace QuanLyPhatTu_API.Payloads.Converters
                 TieuDe = request.TieuDe
             };
         }
+        public BaiViet SuaBaiViet(Request_SuaBaiViet request)
+        {
+            return new BaiViet
+            {
+                Id = request.BaiVietId,
+                LoaiBaiVietId = request.LoaiBaiBietId,
+                TieuDe = request.TieuDe,
+                MoTa = request.MoTa,
+                NoiDung = request.NoiDung
+            };
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace QuanLyPhatTu_API.Service.Implements
         private string ChuanHoaChuoi(string name)
         {
             name = name.Trim().ToLower();
-            while(name.Contains("  "))
+            while (name.Contains("  "))
             {
                 name = name.Replace("  ", " ");
             }
@@ -51,15 +51,24 @@ namespace QuanLyPhatTu_API.Service.Implements
                  .Take(pageSize);
         }
 
-        public Task<ResponseObject<BaiVietDTO>> SuaBaiViet(int baiVietId, Request_TaoBaiViet request)
+        public async Task<ResponseObject<BaiVietDTO>> SuaBaiViet(Request_SuaBaiViet request)
         {
-            throw new NotImplementedException();
+            var baiViet = await _context.baiViets.SingleOrDefaultAsync(x => x.Id == request.BaiVietId);
+            if (baiViet == null)
+            {
+                return _responseObjectBaiVietDTO.ResponseError(StatusCodes.Status404NotFound, "Không tìm thấy bài viết", null);
+            }
+            var baiVietSua = _converter.SuaBaiViet(request);
+            baiVietSua.ThoiGianCapNhat = DateTime.Now;
+            _context.baiViets.Update(baiVietSua);
+            await _context.SaveChangesAsync();
+            return _responseObjectBaiVietDTO.ResponseSuccess("Sửa bài viết thành công", _converter.EntityToDTO(baiVietSua));
         }
 
         public async Task<ResponseObject<BaiVietDTO>> TaoBaiViet(int nguoiDangBaiId, Request_TaoBaiViet request)
         {
             var loaiBaiViet = await _context.loaiBaiViets.SingleOrDefaultAsync(x => x.Id == request.LoaiBaiVietId);
-            if(loaiBaiViet == null)
+            if (loaiBaiViet == null)
             {
                 return _responseObjectBaiVietDTO.ResponseError(StatusCodes.Status404NotFound, "Không tìm thấy loại bài viết", null);
             }
@@ -79,15 +88,28 @@ namespace QuanLyPhatTu_API.Service.Implements
             return _responseObjectBaiVietDTO.ResponseSuccess("Tạo bài viết thành công", _converter.EntityToDTO(baiVietTao));
         }
 
-        public Task<string> XoaBaiViet(int baiVietId)
+        public async Task<string> XoaBaiViet(int baiVietId)
         {
-            throw new NotImplementedException();
+            var baiViet = await _context.baiViets.SingleOrDefaultAsync(x => x.Id == baiVietId);
+            if (baiViet == null)
+            {
+                return "Không tìm thấy bài viết";
+            }
+            var nguoiTaoBai = await _context.phatTus.SingleOrDefaultAsync(x => x.Id == baiViet.PhatTuId);
+            if(nguoiTaoBai == null)
+            {
+                return "Không muốn xóa bài viết không phải là người đăng bài viết đó";
+            }
+            baiViet.DaXoa = true;
+            _context.baiViets.Update(baiViet);
+            await _context.SaveChangesAsync();
+            return "Xóa bài viết thành công";
         }
 
         public async Task<string> DuyetBaiViet(int nguoiDuyetId, int baiVietId)
         {
             var baiViet = await _context.baiViets.SingleOrDefaultAsync(x => x.Id == baiVietId);
-            if(baiViet is null)
+            if (baiViet is null)
             {
                 return "Bài viết không tồn tại";
             }

@@ -36,5 +36,40 @@ namespace QuanLyPhatTu_API.Controllers
             return Ok(await _iBaiVietService.DuyetBaiViet(id, baiVietId));
         }
 
+        [HttpPut("SuaBaiViet")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IActionResult> SuaBaiViet(Request_SuaBaiViet request)
+        {
+            return Ok(await _iBaiVietService.SuaBaiViet(request));
+        }
+
+        [HttpPut("XoaBaiViet")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Roles = "Admin, Mod, Member")]
+        public async Task<IActionResult> XoaBaiViet(int baiVietId)
+        {
+            return Ok(await _iBaiVietService.XoaBaiViet(baiVietId));
+        }
+
+        [HttpPut("LayTatCaBaiViet")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IActionResult> LayTatCaBaiViet(int pageSize, int pageNumber)
+        {
+            return Ok(await _iBaiVietService.LayTatCaBaiViet(pageSize, pageNumber));
+        }
+
+        [HttpPut("LayBaiVietTheoNguoiDung")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IActionResult> LayBaiVietTheoNguoiDung(int nguoiDungId, int pageSize, int pageNumber)
+        {
+            return Ok(await _iBaiVietService.LayBaiVietTheoNguoiDung(nguoiDungId, pageSize, pageNumber));
+        }
+
+        [HttpPut("LayBaiVietTheoLoaiBaiViet")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public async Task<IActionResult> LayBaiVietTheoLoaiBaiViet(string tenLoai, int pageSize, int pageNumber)
+        {
+            return Ok(await _iBaiVietService.LayBaiVietTheoLoaiBaiViet(tenLoai, pageSize, pageNumber));
+        }
     }
 }

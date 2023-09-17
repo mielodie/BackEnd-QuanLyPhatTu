@@ -7,7 +7,7 @@ namespace QuanLyPhatTu_API.Service.Interfaces
     public interface IBaiVietService
     {
         Task<ResponseObject<BaiVietDTO>> TaoBaiViet(int nguoiDangBaiId, Request_TaoBaiViet request);
-        Task<ResponseObject<BaiVietDTO>> SuaBaiViet(int baiVietId, Request_TaoBaiViet request);
+        Task<ResponseObject<BaiVietDTO>> SuaBaiViet(Request_SuaBaiViet request);
         Task<string> XoaBaiViet(int baiVietId);
         Task<IQueryable<BaiVietDTO>> LayTatCaBaiViet(int pageSize, int pageNumber);
         Task<IQueryable<BaiVietDTO>> LayBaiVietTheoNguoiDung(int nguoiDungId, int pageSize, int pageNumber);
