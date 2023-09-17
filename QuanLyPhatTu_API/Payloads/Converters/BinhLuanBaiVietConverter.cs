@@ -28,5 +28,11 @@ namespace QuanLyPhatTu_API.Payloads.Converters
                 BaiVietId = request.BaiVietId
             };
         }
+        public BinhLuanBaiViet SuaBinhLuan(BinhLuanBaiViet binhLuan, Request_SuaBinhLuan request)
+        {
+            binhLuan.BaiVietId = request.BaiVietId;
+            binhLuan.BinhLuan = request.BinhLuan;
+            return binhLuan;
+        }
     }
 }

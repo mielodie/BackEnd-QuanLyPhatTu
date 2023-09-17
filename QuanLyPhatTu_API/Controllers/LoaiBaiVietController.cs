@@ -16,19 +16,19 @@ namespace QuanLyPhatTu_API.Controllers
             _iLoaiBaiVietService = iLoaiBaiVietService;
         }
         [HttpPost("ThemLoaiBaiViet")]
-        [Authorize(Roles = "Admin, Mod")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ThemLoaiBaiViet(Request_TaoLoaiBaiViet request)
         {
             return Ok(await _iLoaiBaiVietService.ThemLoaiBaiViet(request));
         }
         [HttpPut("SuaLoaiBaiViet")]
-        [Authorize(Roles = "Admin, Mod")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> SuaLoaiBaiViet(int loaiBaiVietID, Request_SuaLoaiBaiViet request)
         {
             return Ok(await _iLoaiBaiVietService.SuaLoaiBaiViet(loaiBaiVietID, request));
         }
         [HttpDelete("XoaLoaiBaiViet")]
-        [Authorize(Roles = "Admin, Mod")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> XoaLoaiBaiViet(int loaiBaiVietID)
         {
             return Ok(await _iLoaiBaiVietService.XoaLoaiBaiViet(loaiBaiVietID));

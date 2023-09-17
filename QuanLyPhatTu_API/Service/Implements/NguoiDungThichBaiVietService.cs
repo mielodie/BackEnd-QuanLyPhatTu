@@ -10,12 +10,10 @@ namespace QuanLyPhatTu_API.Service.Implements
 {
     public class NguoiDungThichBaiVietService : BaseService, INguoiDungThichBaiVietService
     {
-        private readonly ResponseObject<NguoiDungThichBaiVietDTO> _responseObject;
         private readonly NguoiDungThichBaiVietConverter _converter;
         public NguoiDungThichBaiVietService()
         {
             _converter = new NguoiDungThichBaiVietConverter();
-            _responseObject = new ResponseObject<NguoiDungThichBaiVietDTO>();
         }
         public async Task<string> Dislike(int thichBaiVietId, int baiVietId, int nguoiDungId)
         {

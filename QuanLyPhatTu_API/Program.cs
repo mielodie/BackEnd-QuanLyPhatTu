@@ -34,7 +34,9 @@ builder.Services.AddScoped<IPhatTuService, PhatTuService>();
 builder.Services.AddScoped<ILoaiBaiVietService, LoaiBaiVietService>();
 builder.Services.AddScoped<INguoiDungThichBaiVietService, NguoiDungThichBaiVietService>();
 builder.Services.AddScoped<IBinhLuanBaiVietService, BinhLuanBaiVietService>();
+builder.Services.AddScoped<INguoiDungThichBinhLuanBaiVietService, NguoiDungThichBinhLuanBaiVietService>();
 builder.Services.AddSingleton<ResponseObject<BinhLuanBaiVietDTO>>();
+builder.Services.AddSingleton<ResponseObject<NguoiDungThichBinhLuanBaiVietDTO>>();
 builder.Services.AddSingleton<ResponseObject<LoaiBaiVietDTO>>();
 builder.Services.AddSingleton<ResponseObject<PhatTuDTO>>();
 builder.Services.AddSingleton<ResponseObject<TokenDTO>>();
@@ -45,6 +47,7 @@ builder.Services.AddSingleton<PhatTuConverter>();
 builder.Services.AddSingleton<DaoTrangConverter>();
 builder.Services.AddSingleton<ChuaConverter>();
 builder.Services.AddSingleton<DonDangKyConverter>();
+builder.Services.AddSingleton<NguoiDungThichBinhLuanBaiVietConverter>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 
 {
