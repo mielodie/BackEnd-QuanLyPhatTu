@@ -21,44 +21,44 @@ namespace QuanLyPhatTu_API.Controllers
         }
         [HttpGet("/api/phattu/get-all")]
         [Authorize(Roles = "ADMIN, MOD")]
-        public async Task<IActionResult> LayTatCaPhatTu(int pageSize, int pageNumber)
+        public async Task<IActionResult> LayTatCaPhatTu(int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iPhatTuService.LayTatCaPhatTu(pageSize, pageNumber));
         }
 
         [HttpGet("/api/phatu/LayPhatTuTheoChua")]
         [Authorize(Roles = "ADMIN, MOD")]
-        public async Task<IActionResult> LayPhatTuTheoChua(int chuaId, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayPhatTuTheoChua(int? chuaId, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iPhatTuService.LayPhatTuTheoChua(chuaId, pageSize, pageNumber));
         }
         [HttpGet("/api/phattu/LayPhatTuTheoEmail")]
         [Authorize(Roles = "ADMIN, MOD")]
-        public async Task<IActionResult> LayPhatTuTheoEmail(string email, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayPhatTuTheoEmail(string email)
         {
-            return Ok(await _iPhatTuService.LayPhatTuTheoEmail(email, pageSize, pageNumber));
+            return Ok(await _iPhatTuService.LayPhatTuTheoEmail(email));
         }
         [HttpGet("/api/phattu/LayPhatTuTheoGioiTinh")]
         [Authorize(Roles = "ADMIN, MOD")]
-        public async Task<IActionResult> LayPhatTuTheoGioiTinh(string gioiTinh, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayPhatTuTheoGioiTinh(string? gioiTinh, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iPhatTuService.LayPhatTuTheoGioiTinh(gioiTinh, pageSize, pageNumber));
         }
         [HttpGet("/api/phattu/LayPhatTuTheoPhapDanh")]
         [Authorize(Roles = "ADMIN, MOD")]
-        public async Task<IActionResult> LayPhatTuTheoPhapDanh(string phapDanh, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayPhatTuTheoPhapDanh(string? phapDanh, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iPhatTuService.LayPhatTuTheoPhapDanh(phapDanh, pageSize, pageNumber));
         }
         [HttpGet("/api/phattu/LayPhatTuTheoTen")]
         [Authorize(Roles = "ADMIN, MOD")]
-        public async Task<IActionResult> LayPhatTuTheoTen(string name, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayPhatTuTheoTen(string? name, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iPhatTuService.LayPhatTuTheoTen(name, pageSize, pageNumber));
         }
         [HttpGet("/api/phattu/LayPhatTuTheoTrangThai")]
         [Authorize(Roles = "ADMIN, MOD")]
-        public async Task<IActionResult> LayPhatTuTheoTrangThai(bool status, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayPhatTuTheoTrangThai(bool? status, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iPhatTuService.LayPhatTuTheoTrangThai(status, pageSize, pageNumber));
         }
@@ -99,6 +99,12 @@ namespace QuanLyPhatTu_API.Controllers
         public async Task<IActionResult> XoaPhatTu(int phatTuId)
         {
             return Ok(await _iPhatTuService.XoaPhatTu(phatTuId));
+        }
+        [HttpPut("api/phattu/ThemPhatTuVaoChua")]
+        [Authorize(Roles = "ADMIN")]
+        public async Task<IActionResult> ThemPhatTuVaoChua(Request_ThemPhatTuVaoChua request)
+        {
+            return Ok(await _iPhatTuService.ThemPhatTuVaoChua(request));
         }
     }
 }

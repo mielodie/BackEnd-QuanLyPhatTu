@@ -18,9 +18,9 @@ namespace QuanLyPhatTu_API.Controllers
         }
         [HttpGet("/api/chua/LayTatCaChua")]
         [Authorize(Roles = "Admin, Mod")]
-        public async Task<IActionResult> LayTatCaChua()
+        public async Task<IActionResult> LayTatCaChua(int pageSize = 10, int pageNumber = 1)
         {
-            return Ok(await _chuaService.LayTatCaChua());
+            return Ok(await _chuaService.LayTatCaChua(pageSize, pageNumber));
         }
         [HttpPut("/api/chua/SuaThongTinChua")]
         [Authorize(Roles = "Admin")]

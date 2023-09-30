@@ -35,13 +35,13 @@ namespace QuanLyPhatTu_API.Controllers
         }
         [HttpGet("LayLoaiBaiViet")]
         [Authorize(Roles = "Admin, Mod")]
-        public async Task<IActionResult> LayLoaiBaiViet(int pageSize, int pageNumber)
+        public async Task<IActionResult> LayLoaiBaiViet(int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iLoaiBaiVietService.LayLoaiBaiViet(pageSize, pageNumber));
         }
         [HttpGet("LayLoaiBaiVietTheoTen")]
         [Authorize(Roles = "Admin, Mod")]
-        public async Task<IActionResult> LayLoaiBaiVietTheoTen(string tenLoai, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayLoaiBaiVietTheoTen(string? tenLoai, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iLoaiBaiVietService.LayLoaiBaiVietTheoTen(tenLoai, pageSize, pageNumber));
         }

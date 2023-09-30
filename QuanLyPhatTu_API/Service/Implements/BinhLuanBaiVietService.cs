@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using QuanLyPhatTu_API.Entities;
+using QuanLyPhatTu_API.Handle.HandlePagination;
 using QuanLyPhatTu_API.Payloads.Converters;
 using QuanLyPhatTu_API.Payloads.DTOs;
 using QuanLyPhatTu_API.Payloads.Requests.BinhLuanBaiVietRequest;
@@ -27,13 +29,14 @@ namespace QuanLyPhatTu_API.Service.Implements
             return name;
         }
 
-        public async Task<IQueryable<BinhLuanBaiVietDTO>> LayBinhLuanTheoTenTaiKhoan(string tenTaiKhoan, int pageSize, int pageNumber)
+        public async Task<PageResult<BinhLuanBaiVietDTO>> LayBinhLuanTheoNguoiDung(int? userId, int pageSize = 10, int pageNumber = 1)
         {
-            return _context.binhLuanBaiViets
-                .Where(x => ChuanHoaChuoi(x.PhatTu.TaiKhoan).Equals(ChuanHoaChuoi(tenTaiKhoan)))
-                .Select(x => _converter.EntityToDTO(x))
-                .Skip((pageNumber - 1) * pageNumber)
-                .Take(pageSize);
+            var query = _context.binhLuanBaiViets
+                                .Include(x => x.BaiViet)
+                                .Where(x => x.Id == userId)
+                                .Select(x => _converter.EntityToDTO(x));
+            var result = Pagination.GetPageData(query, pageSize, pageNumber);
+            return result;
         }
 
         public async Task<ResponseObject<BinhLuanBaiVietDTO>> SuaBinhLuan(int binhLuanId, int nguoiDungId, Request_SuaBinhLuan request)

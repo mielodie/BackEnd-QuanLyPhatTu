@@ -53,21 +53,21 @@ namespace QuanLyPhatTu_API.Controllers
 
         [HttpPut("LayTatCaBaiViet")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> LayTatCaBaiViet(int pageSize, int pageNumber)
+        public async Task<IActionResult> LayTatCaBaiViet(int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iBaiVietService.LayTatCaBaiViet(pageSize, pageNumber));
         }
 
         [HttpPut("LayBaiVietTheoNguoiDung")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> LayBaiVietTheoNguoiDung(int nguoiDungId, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayBaiVietTheoNguoiDung(int? nguoiDungId, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iBaiVietService.LayBaiVietTheoNguoiDung(nguoiDungId, pageSize, pageNumber));
         }
 
         [HttpPut("LayBaiVietTheoLoaiBaiViet")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        public async Task<IActionResult> LayBaiVietTheoLoaiBaiViet(string tenLoai, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayBaiVietTheoLoaiBaiViet(string? tenLoai, int pageSize = 10, int pageNumber = 1)
         {
             return Ok(await _iBaiVietService.LayBaiVietTheoLoaiBaiViet(tenLoai, pageSize, pageNumber));
         }

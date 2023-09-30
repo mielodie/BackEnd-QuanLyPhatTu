@@ -8,7 +8,7 @@ namespace QuanLyPhatTu_API.Service.Interfaces
 {
     public interface IAuthService
     {
-        Task<ResponseObject<PhatTuDTO>> DangKyPhatTu(Request_DangKy request);
+        Task<ResponseObject<PhatTuDTO>> DangKy(Request_DangKy request);
         Task<ResponseObject<TokenDTO>> DangNhap(Request_DangNhap request);
         TokenDTO GenerateAccessToken(PhatTu phatTu);
         string GenerateRefreshToken();
@@ -18,5 +18,6 @@ namespace QuanLyPhatTu_API.Service.Interfaces
         Task<ResponseObject<PhatTuDTO>> TaoMatKhauMoi(Request_TaoMatKhauMoi request);
         Task<string> DoiMatKhau(int phatTuId, Request_DoiMatKhau request);
         Task<string> ThayDoiQuyenHan(int phatTuId);
+        Task<string> XacNhanDangKyTaiKhoan(string maXacNhan);
     }
 }

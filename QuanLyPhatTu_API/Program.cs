@@ -28,6 +28,7 @@ builder.Services.AddSwaggerGen(x =>
 });
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IDaoTrangService, DaoTrangService>();
+builder.Services.AddScoped<IBaiVietService, BaiVietService>();
 builder.Services.AddScoped<IChuaService, ChuaService>();
 builder.Services.AddScoped<IDonDangKyService, DonDangKyService>();
 builder.Services.AddScoped<IPhatTuService, PhatTuService>();
@@ -47,6 +48,9 @@ builder.Services.AddSingleton<PhatTuConverter>();
 builder.Services.AddSingleton<DaoTrangConverter>();
 builder.Services.AddSingleton<ChuaConverter>();
 builder.Services.AddSingleton<DonDangKyConverter>();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddCors();
+builder.Services.AddHttpClient();
 builder.Services.AddSingleton<NguoiDungThichBinhLuanBaiVietConverter>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 

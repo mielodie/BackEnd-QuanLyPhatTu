@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using QuanLyPhatTu_API.Entities;
+using QuanLyPhatTu_API.Handle.HandlePagination;
 using QuanLyPhatTu_API.Payloads.Converters;
 using QuanLyPhatTu_API.Payloads.DTOs;
 using QuanLyPhatTu_API.Payloads.Requests.ChuaRequest;
@@ -17,9 +19,13 @@ namespace QuanLyPhatTu_API.Service.Implements
             _responseObject = responseObject;
             _chuaConverter = chuaConverter;
         }
-        public async Task<IQueryable<ChuaDTO>> LayTatCaChua()
+        public async Task<PageResult<ChuaDTO>> LayTatCaChua(int pageSize = 10, int pageNumber = 1)
         {
-            return _context.chuas.Select(x => _chuaConverter.EntityToDTO(x));
+            var chuaQuery = _context.chuas
+                                    .Include(x => x.PhatTus).AsNoTracking()
+                                    .Select(x => _chuaConverter.EntityToDTO(x));
+            var result = Pagination.GetPageData(chuaQuery, pageSize, pageNumber);
+            return result;
         }
 
         public async Task<ResponseObject<ChuaDTO>> SuaThongTinChua(int chuaId,Request_SuaThongTinChua request)

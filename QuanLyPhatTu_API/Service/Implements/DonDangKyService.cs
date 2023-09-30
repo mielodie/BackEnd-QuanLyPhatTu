@@ -13,27 +13,32 @@ namespace QuanLyPhatTu_API.Service.Implements
     {
         private readonly ResponseObject<DonDangKyDTO> _responseObject;
         private readonly DonDangKyConverter _donDangKyConverter;
-        public DonDangKyService(ResponseObject<DonDangKyDTO> responseObject,DonDangKyConverter donDangKyConverter)
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public DonDangKyService(ResponseObject<DonDangKyDTO> responseObject,DonDangKyConverter donDangKyConverter, IHttpContextAccessor httpContextAccessor)
         {
             _responseObject = responseObject;
             _donDangKyConverter = donDangKyConverter;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<ResponseObject<DonDangKyDTO>> DuyetDonDangKy(int nguoiXuLyId, Request_DuyetDonDangKy request)
         {
             var donDangKy = await _context.donDangKies.FirstOrDefaultAsync(x => x.Id == request.DonDangKyId);
-
+            var currentUser = _httpContextAccessor.HttpContext.User;
+            if (!currentUser.Identity.IsAuthenticated)
+            {
+                return _responseObject.ResponseError(StatusCodes.Status401Unauthorized, "Người dùng không được xác định", null);
+            }
+            if (!currentUser.IsInRole("ADMIN"))
+            {
+                return _responseObject.ResponseError(StatusCodes.Status403Forbidden, "Người dùng không có quyền sử dụng chức năng này", null);
+            }
             if (donDangKy == null)
             {
                 return _responseObject.ResponseError(StatusCodes.Status404NotFound, "Không tìm thấy đơn đăng ký", null);
             }
 
             var nguoiDuyet = await _context.phatTus.FirstOrDefaultAsync(x => x.Id == nguoiXuLyId);
-
-            if (nguoiDuyet == null)
-            {
-                return _responseObject.ResponseError(StatusCodes.Status404NotFound, "Không tìm thấy người duyệt", null);
-            }
 
             donDangKy.NgayXuLy = DateTime.Now;
             donDangKy.NguoiXuLy = nguoiDuyet.Id;
@@ -49,16 +54,6 @@ namespace QuanLyPhatTu_API.Service.Implements
                     daoTrang.SoThanhVienThamGia += 1;
                     _context.daoTrangs.Update(daoTrang);
                 }
-                //var phatTuDaoTrangs = await _context.phatTuDaoTrangs.Where(x => x.DaoTrangId == daoTrang.Id).ToListAsync();
-                //phatTuDaoTrangs.ForEach(x =>
-                //{
-                //    x.LyDoKhongThamGia = "Không thích";
-                //    x.DaThamGia = donDangKy.TrangThaiDonId == 2;
-                //    x.DaoTrangId = daoTrang.Id;
-                //    x.PhatTuId = donDangKy.PhatTuId;
-
-                //});
-                //await _context.phatTuDaoTrangs.AddRangeAsync(phatTuDaoTrangs);
                 var phatTuDaoTrang = new PhatTuDaoTrang
                 {
                     DaoTrangId = daoTrang.Id,

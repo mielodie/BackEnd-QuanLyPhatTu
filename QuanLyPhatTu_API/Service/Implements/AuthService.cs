@@ -38,7 +38,7 @@ namespace QuanLyPhatTu_API.Service.Implements
             _phatTuConverter = phatTuConverter;
         }
 
-        public async Task<ResponseObject<PhatTuDTO>> DangKyPhatTu(Request_DangKy request)
+        public async Task<ResponseObject<PhatTuDTO>> DangKy(Request_DangKy request)
         {
             if(string.IsNullOrWhiteSpace(request.HoVaTen) 
                 || string.IsNullOrWhiteSpace(request.TaiKhoan)
@@ -72,18 +72,13 @@ namespace QuanLyPhatTu_API.Service.Implements
                     PhatTu phatTu = new PhatTu();
                     phatTu.TaiKhoan = request.TaiKhoan;
                     phatTu.MatKhau = BCryptNet.HashPassword(request.MatKhau);
-                    phatTu.NgayCapNhat = DateTime.Now;
                     phatTu.NgaySinh = request.NgaySinh;
                     phatTu.Email = request.Email;
                     phatTu.HoVaTen = request.HoVaTen;
                     phatTu.QuyenHanId = 3;
-                    phatTu.SoDienThoai = request.SoDienThoai;
                     phatTu.GioiTinh = request.GioiTinh;
-                    phatTu.PhapDanh = request.PhapDanh;
-                    phatTu.ChuaId = request.ChuaId;
-                    phatTu.NgayXuatGia = request.NgayXuatGia;
-                    phatTu.DaHoanTuc = false;
-                    phatTu.LaThanhVienThamGiaDaoTrang = false;
+                    phatTu.SoDienThoai = request.SoDienThoai;
+                    phatTu.IsActive = false;
                     string imageUrl = "";
                     if (request.AnhChup != null)
                     {
@@ -102,7 +97,25 @@ namespace QuanLyPhatTu_API.Service.Implements
 
                     await _context.phatTus.AddAsync(phatTu);
                     await _context.SaveChangesAsync();
-                    return _responseObject.ResponseSuccess("Đăng ký tài khoản thành công", _phatTuConverter.EntityToDTO(phatTu));
+                    var confirms = _context.xacNhanEmails.Where(x => x.PhatTuId == phatTu.Id).ToList();
+                    _context.xacNhanEmails.RemoveRange(confirms);
+                    await _context.SaveChangesAsync();
+                    XacNhanEmail confirmEmail = new XacNhanEmail
+                    {
+                        PhatTuId = phatTu.Id,
+                        DaXacNhan = false,
+                        ThoiGianHetHan = DateTime.Now.AddHours(4),
+                        MaXacNhan = "MyBugs" + "_" + GenerateCodeActive().ToString()
+                    };
+                    await _context.xacNhanEmails.AddAsync(confirmEmail);
+                    await _context.SaveChangesAsync();
+                    string message = SendEmail(new EmailTo
+                    {
+                        Mail = request.Email,
+                        Subject = "Nhận mã kích hoạt để xác nhận đăng ký tại khoản tịa đây: ",
+                        Content = $"Mã kích hoạt của bạn là: {confirmEmail.MaXacNhan}, mã này sẽ hết hạn sau 4 tiếng"
+                    });
+                    return _responseObject.ResponseSuccess("Bạn đã thực hiện đăng ký tài khoản, vui lòng nhập mã xác nhận để kích hoạt tài khoản", _phatTuConverter.EntityToDTO(phatTu));
                 }
                 catch (Exception ex)
                 {
@@ -110,7 +123,24 @@ namespace QuanLyPhatTu_API.Service.Implements
                 }
             }
         }
-
+        public async Task<string> XacNhanDangKyTaiKhoan(string maXacNhan)
+        {
+            XacNhanEmail confirmEmail = await _context.xacNhanEmails.SingleOrDefaultAsync(x => x.MaXacNhan.Equals(maXacNhan));
+            if (confirmEmail is null)
+            {
+                return "Mã xác nhận không chính xác";
+            }
+            if (confirmEmail.ThoiGianHetHan < DateTime.Now)
+            {
+                return "Mã xác nhận đã hết hạn";
+            }
+            PhatTu phatTu = _context.phatTus.FirstOrDefault(x => x.Id == confirmEmail.PhatTuId);
+            phatTu.IsActive = true;
+            _context.xacNhanEmails.Remove(confirmEmail);
+            _context.phatTus.Update(phatTu);
+            await _context.SaveChangesAsync();
+            return "Xác nhận đăng ký tài khoản thành công";
+        }
         public async Task<ResponseObject<TokenDTO>> DangNhap(Request_DangNhap request)
         {
             if(string.IsNullOrWhiteSpace(request.TaiKhoan) || string.IsNullOrWhiteSpace(request.MatKhau))
@@ -215,9 +245,9 @@ namespace QuanLyPhatTu_API.Service.Implements
                     return _responseObjectToken.ResponseError(StatusCodes.Status404NotFound, "RefreshToken không tồn tại trong database", null);
                 }
 
-                if (refreshToken.ThoiGianHetHan >= DateTime.Now)
+                if (refreshToken.ThoiGianHetHan < DateTime.Now)
                 {
-                    return _responseObjectToken.ResponseError(StatusCodes.Status401Unauthorized, "Token chưa hết hạn", null);
+                    return _responseObjectToken.ResponseError(StatusCodes.Status401Unauthorized, "Token đã hết hạn", null);
                 }
 
                 var user = _context.phatTus.FirstOrDefault(x => x.Id == refreshToken.PhatTuId);

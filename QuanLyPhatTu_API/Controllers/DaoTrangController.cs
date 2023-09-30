@@ -46,9 +46,9 @@ namespace QuanLyPhatTu_API.Controllers
         }
         [HttpGet("/api/daotrang/LayTatCaDaoTrang")]
         [Authorize(Roles = "Admin, Mod")]
-        public async Task<IActionResult> LayTatCaDaoTrang()
+        public async Task<IActionResult> LayTatCaDaoTrang(int pageSize = 10, int pageNumber = 1)
         {
-            return Ok(await _daoTrangService.LayTatCaDaoTrang());
+            return Ok(await _daoTrangService.LayTatCaDaoTrang(pageSize, pageNumber));
         }
     }
 }

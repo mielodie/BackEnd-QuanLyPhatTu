@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using QuanLyPhatTu_API.Entities;
+using QuanLyPhatTu_API.Handle.HandlePagination;
 using QuanLyPhatTu_API.Payloads.Converters;
 using QuanLyPhatTu_API.Payloads.DTOs;
 using QuanLyPhatTu_API.Payloads.DTOs.ThongKeDaoTrang;
@@ -111,9 +113,14 @@ namespace QuanLyPhatTu_API.Service.Implements
             }
         }
 
-        public async Task<IQueryable<DaoTrangDTO>> LayTatCaDaoTrang()
+        public async Task<PageResult<DaoTrangDTO>> LayTatCaDaoTrang(int pageSize = 10, int pageNumber = 1)
         {
-            return _context.daoTrangs.Select(x => _daoTrangConverter.EntityToDTO(x));
+            var daoTrangQuery = _context.daoTrangs
+                                                  .Include(x => x.PhatTuDaoTrangs)
+                                                  .Include(x => x.DonDangKies).AsNoTracking()
+                                                  .Select(x => _daoTrangConverter.EntityToDTO(x));
+            var result = Pagination.GetPageData(daoTrangQuery, pageSize, pageNumber);
+            return result;
         }
     }
 }

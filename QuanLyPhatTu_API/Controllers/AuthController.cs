@@ -23,7 +23,7 @@ namespace QuanLyPhatTu_API.Controllers
 
         public async Task<IActionResult> DangKy([FromForm] Request_DangKy register)
         {
-            var result = await _authService.DangKyPhatTu(register);
+            var result = await _authService.DangKy(register);
             if (result == null)
             {
                 return BadRequest(result);
@@ -53,8 +53,13 @@ namespace QuanLyPhatTu_API.Controllers
             }
             return Ok(result);
         }
+        [HttpPut("/api/auth/XacNhanDangKyTaiKhoan")]
+        public async Task<IActionResult> XacNhanDangKyTaiKhoan(string maXacNhan)
+        {
+            return Ok(await _authService.XacNhanDangKyTaiKhoan(maXacNhan));
+        }
 
-        
+
         [HttpPut]
         [Route("/api/auth/DoiMatKhau")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]

@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuanLyPhatTu_API.DataContext;
 using QuanLyPhatTu_API.Entities;
+using QuanLyPhatTu_API.Handle.HandlePagination;
 using QuanLyPhatTu_API.Payloads.Converters;
 using QuanLyPhatTu_API.Payloads.DTOs;
 using QuanLyPhatTu_API.Payloads.Requests.LoaiBaiVietRequest;
@@ -60,20 +61,31 @@ namespace QuanLyPhatTu_API.Service.Implements
                 return _responseObjectLoaiBaiVietDTO.ResponseSuccess("Xoa loai bai viet thanh cong", null);
             }
         }
-        public async Task<IQueryable<LoaiBaiVietDTO>> LayLoaiBaiViet(int pageSize, int pageNumber)
+        public async Task<PageResult<LoaiBaiVietDTO>> LayLoaiBaiViet(int pageSize = 10, int pageNumber = 1)
         {
-            return  _context.loaiBaiViets
-                .Select(x => _converter.EntityToDTO(x))
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize);
+            var loaiBaiVietResult = _context.loaiBaiViets
+                                            .Include(x => x.BaiViets).AsNoTracking()
+                                            .Select(x => _converter.EntityToDTO(x));
+            var result = Pagination.GetPageData(loaiBaiVietResult, pageSize, pageNumber);
+            return result;
         }
-        public async Task<IQueryable<LoaiBaiVietDTO>> LayLoaiBaiVietTheoTen(string tenLoai, int pageSize, int pageNumber)
+        public async Task<PageResult<LoaiBaiVietDTO>> LayLoaiBaiVietTheoTen(string? tenLoai, int pageSize = 10, int pageNumber = 1)
         {
-            return _context.loaiBaiViets
-                .Where(x => x.TenLoai.Trim().ToLower().Contains(tenLoai.Trim().ToLower()))
-                .Select(x => _converter.EntityToDTO(x))
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize);
+            var loaiBaiVietResult = _context.loaiBaiViets
+                                            .Include(x => x.BaiViets).AsNoTracking()
+                                            .Where(x => ChuanHoaChuoi(x.TenLoai).Contains(ChuanHoaChuoi(tenLoai)))
+                                            .Select(x => _converter.EntityToDTO(x));
+            var result = Pagination.GetPageData(loaiBaiVietResult, pageSize, pageNumber);
+            return result;
+        }
+        private string ChuanHoaChuoi(string str)
+        {
+            str = str.ToLower().Trim();
+            while (str.Contains("  "))
+            {
+                str = str.Replace("  ", " ");
+            }
+            return str;
         }
     }
 }

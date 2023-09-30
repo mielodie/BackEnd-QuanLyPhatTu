@@ -40,12 +40,12 @@ namespace QuanLyPhatTu_API.Controllers
             return Ok(await _binhLuanService.XoaBinhLuan(binhLuanId, id, baiVietId));
         }
 
-        [HttpGet("LayBinhLuanTheoTenTaiKhoan")]
+        [HttpGet("LayBinhLuanTheoNguoiDung")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [Authorize("Admin, Mod")]
-        public async Task<IActionResult> LayBinhLuanTheoTenTaiKhoan(string tenTaiKhoan, int pageSize, int pageNumber)
+        public async Task<IActionResult> LayBinhLuanTheoNguoiDung(int? userId, int pageSize = 10, int pageNumber = 1)
         {
-            return Ok(await _binhLuanService.LayBinhLuanTheoTenTaiKhoan(tenTaiKhoan, pageSize, pageNumber));
+            return Ok(await _binhLuanService.LayBinhLuanTheoNguoiDung(userId, pageSize, pageNumber));
         }
     }
 }
